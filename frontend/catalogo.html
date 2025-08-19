@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Portal da Leitura • Catálogo</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="container wrap">
+    <div class="brand">
+      <div class="logo">📘</div>
+      <span>Catálogo</span>
+    </div>
+    <nav class="nav">
+      <a href="index.html">Início</a>
+      <a href="usuarios.html">Usuários</a>
+      <a href="catalogo.html" class="active">Catálogo</a>
+      <a href="emprestimo.html">Empréstimo</a>
+      <a href="painel.html">Painel</a>
+    </nav>
+    <div class="controls">
+      <button class="theme" data-theme>Alternar tema</button>
+    </div>
+  </div>
+</header>
+
+<main class="container section">
+  <div class="form-wrap">
+    <form id="formLivro" class="form" novalidate>
+      <h2>Adicionar Livro</h2>
+      <input id="titulo" class="input" type="text" placeholder="Título" required>
+      <input id="autor" class="input" type="text" placeholder="Autor" required>
+      <input id="categoria" class="input" type="text" placeholder="Categoria" required>
+      <input id="ano_public" class="input" type="text" placeholder="Ano de publicação" required>
+      <button class="submit" type="submit">Salvar</button>
+    </form>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container">Portal da Leitura</div>
+</footer>
+<div class="toast"></div>
+</body>
+</html>

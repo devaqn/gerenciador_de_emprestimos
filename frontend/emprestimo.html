@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Portal da Leitura • Empréstimo</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="container wrap">
+    <div class="brand">
+      <div class="logo">🔗</div>
+      <span>Empréstimo</span>
+    </div>
+    <nav class="nav">
+      <a href="index.html">Início</a>
+      <a href="usuarios.html">Usuários</a>
+      <a href="catalogo.html">Catálogo</a>
+      <a href="emprestimo.html" class="active">Empréstimo</a>
+      <a href="painel.html">Painel</a>
+    </nav>
+    <div class="controls">
+      <button class="theme" data-theme>Alternar tema</button>
+    </div>
+  </div>
+</header>
+
+<main class="container section">
+  <div class="form-wrap">
+    <form id="formEmprestimo" class="form" novalidate>
+      <h2>Registrar Empréstimo</h2>
+      <label class="kicker" for="usuario">Usuário</label>
+      <select id="usuario"></select>
+      <label class="kicker" for="livro">Livro</label>
+      <select id="livro"></select>
+      <label class="kicker" for="dataDevolucao">Data prevista para devolução</label>
+      <input type="date" id="dataDevolucao" required>
+      <button class="submit" type="submit">Confirmar</button>
+    </form>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container">Portal da Leitura</div>
+</footer>
+<div class="toast"></div>
+</body>
+</html>

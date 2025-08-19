@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Portal da Leitura • Usuários</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="container wrap">
+    <div class="brand">
+      <div class="logo">👤</div>
+      <span>Usuários</span>
+    </div>
+    <nav class="nav">
+      <a href="index.html">Início</a>
+      <a href="usuarios.html" class="active">Usuários</a>
+      <a href="catalogo.html">Catálogo</a>
+      <a href="emprestimo.html">Empréstimo</a>
+      <a href="painel.html">Painel</a>
+    </nav>
+    <div class="controls">
+      <button class="theme" data-theme>Alternar tema</button>
+    </div>
+  </div>
+</header>
+
+<main class="container section">
+  <div class="form-wrap">
+    <form id="formUsuario" class="form" novalidate>
+      <h2>Registrar Usuário</h2>
+      <input id="nome" class="input" type="text" placeholder="Nome completo" required>
+      <input id="email" class="input" type="email" placeholder="E-mail" required>
+      <button class="submit" type="submit">Salvar</button>
+    </form>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container">Portal da Leitura</div>
+</footer>
+<div class="toast"></div>
+</body>
+</html>
